@@ -1,6 +1,6 @@
 local ffi = require "ffi"
 local discordRPClib = (function()
-    if love.system.getOS() == "OS X" then
+    if love.system.getOS() == "OS X" then -- not tested
         return ffi.load("discord-rpc.dylib")
     else
         return ffi.load("discord-rpc")
